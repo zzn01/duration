@@ -43,6 +43,10 @@ func Parse(s string) (time.Duration, error) {
 
 	var d time.Duration
 	var p parser
+
+	if s == "0" {
+		return d, nil
+	}
 	if s[len(s)-1] == 's' {
 		switch c := s[len(s)-2]; c {
 		case 'n': //ns

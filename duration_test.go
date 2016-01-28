@@ -37,6 +37,7 @@ func TestParse2(t *testing.T) {
 
 func TestParse3(t *testing.T) {
 	l := []time.Duration{
+		0,
 		2 * time.Hour,
 		25 * time.Hour,
 		59 * time.Minute,
